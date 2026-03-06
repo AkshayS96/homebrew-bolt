@@ -5,20 +5,20 @@
 class Bolt < Formula
   desc "Developer Swiss Army Knife CLI"
   homepage "https://github.com/AkshayS96/bolt"
-  version "4.4.6"
+  version "4.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AkshayS96/bolt/releases/download/v4.4.6/bolt_4.4.6_darwin_amd64.tar.gz"
-      sha256 "c51127cac39e80c83022b704def874c896a602784d1ebc509282de60f8edcea2"
+      url "https://github.com/AkshayS96/bolt/releases/download/v4.5.0/bolt_4.5.0_darwin_amd64.tar.gz"
+      sha256 "90f6260582a8bacf645ac5761c04ceb1ac40b99b416f9bc0654082c273d61483"
 
       define_method(:install) do
         bin.install "bolt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AkshayS96/bolt/releases/download/v4.4.6/bolt_4.4.6_darwin_arm64.tar.gz"
-      sha256 "bfeccb0f87e623bcb2184902c51750c7fdf12baa76aa1dfa8c892d979c9a887e"
+      url "https://github.com/AkshayS96/bolt/releases/download/v4.5.0/bolt_4.5.0_darwin_arm64.tar.gz"
+      sha256 "baada049fb3ff7ec53193ef4491c8f9d0ebcfd15d7f1cb5aaf2dcf8aa3f36a3a"
 
       define_method(:install) do
         bin.install "bolt"
@@ -28,15 +28,15 @@ class Bolt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AkshayS96/bolt/releases/download/v4.4.6/bolt_4.4.6_linux_amd64.tar.gz"
-      sha256 "6a1b126fc26c8d22e769a389d049064dc6d13671267bc0e1cb7a223776a03a1d"
+      url "https://github.com/AkshayS96/bolt/releases/download/v4.5.0/bolt_4.5.0_linux_amd64.tar.gz"
+      sha256 "94bef436d57701d9a9a60b813024b2d7f9cad70ac1fc01369b88dae1c0f29711"
       define_method(:install) do
         bin.install "bolt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AkshayS96/bolt/releases/download/v4.4.6/bolt_4.4.6_linux_arm64.tar.gz"
-      sha256 "eb4a1b833fc90b1cd2536ef5f7ba6285a7e825f397bee1270579573d32b40a00"
+      url "https://github.com/AkshayS96/bolt/releases/download/v4.5.0/bolt_4.5.0_linux_arm64.tar.gz"
+      sha256 "805d15af1c1059ea74d46df60af71c3a2ce683ad95a43614b2e033c74908246f"
       define_method(:install) do
         bin.install "bolt"
       end
